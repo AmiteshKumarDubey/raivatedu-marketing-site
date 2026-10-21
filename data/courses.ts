@@ -148,7 +148,7 @@ export const COURSES: Course[] = [
     enrollmentCount: 980,
     nextCohortDate: "November 18, 2026",
     seatsLeft: 4,
-    thumbnail: "https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=800&q=80",
+    thumbnail: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
     tags: ["LLMs", "LangChain", "LlamaIndex", "Vector DBs", "RAG", "Python"],
     learningOutcomes: [
       "Build multi-agent collaboration systems with deterministic guardrails",
