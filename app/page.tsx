@@ -100,7 +100,7 @@ export default function HomePage() {
       <section className="relative pt-12 pb-20 md:pt-20 md:pb-32 bg-gradient-to-b from-indigo-50/60 via-white to-transparent dark:from-indigo-950/20 dark:via-slate-900 dark:to-transparent">
         {/* Subtle background glow effect */}
         <div
-          className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gradient-to-tr from-indigo-500/15 via-amber-400/10 to-transparent blur-3xl pointer-events-none rounded-full"
+          className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gradient-to-tr from-indigo-500/15 via-amber-400/10 to-transparent blur-3xl pointer-events-none rounded-full animate-float-slow"
           aria-hidden="true"
         />
 
