@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Clock, BarChart, Calendar, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Clock, Calendar, ArrowRight, CheckCircle2 } from "lucide-react";
 import { Course } from "@/data/types";
 import { Badge } from "./ui/Badge";
 import { StarRating } from "./ui/StarRating";

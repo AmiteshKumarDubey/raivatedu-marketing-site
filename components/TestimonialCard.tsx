@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Quote } from "lucide-react";
+
 import { Testimonial } from "@/data/types";
 import { StarRating } from "./ui/StarRating";
 import { Badge } from "./ui/Badge";

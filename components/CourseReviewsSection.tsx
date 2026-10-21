@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { Star, CheckCircle2, ThumbsUp, MessageSquarePlus, User } from "lucide-react";
+import { CheckCircle2, ThumbsUp, MessageSquarePlus } from "lucide-react";
 import { CourseReview } from "@/data/types";
 import { StarRating } from "./ui/StarRating";
 import { Button } from "./ui/Button";

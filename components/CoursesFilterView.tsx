@@ -1,10 +1,9 @@
 "use client";
 
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useState, useMemo } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import {
   Search,
-  SlidersHorizontal,
   X,
   RotateCcw,
   BookOpen,
@@ -13,7 +12,7 @@ import {
 } from "lucide-react";
 import { COURSES } from "@/data/courses";
 import { CATEGORIES } from "@/data/categories";
-import { Course, CourseLevel } from "@/data/types";
+import { CourseLevel } from "@/data/types";
 import { CourseCard } from "./CourseCard";
 import { Button } from "./ui/Button";
 import { Badge } from "./ui/Badge";
@@ -32,13 +31,16 @@ export function CoursesFilterView() {
   const [selectedLevel, setSelectedLevel] = useState<string>("All");
   const [sortBy, setSortBy] = useState<SortOption>("popular");
 
-  // Sync state if URL query params change (e.g. coming from Hero search)
-  useEffect(() => {
-    const cat = searchParams.get("category");
-    const q = searchParams.get("search");
-    if (cat) setSelectedCategory(cat);
-    if (q) setSearchQuery(q);
-  }, [searchParams]);
+  // Sync state if URL query params change
+  const currentCat = searchParams.get("category");
+  const currentQ = searchParams.get("search");
+  const [prevParams, setPrevParams] = useState({ cat: currentCat, q: currentQ });
+
+  if (prevParams.cat !== currentCat || prevParams.q !== currentQ) {
+    setPrevParams({ cat: currentCat, q: currentQ });
+    if (currentCat) setSelectedCategory(currentCat);
+    if (currentQ !== null && currentQ !== undefined) setSearchQuery(currentQ);
+  }
 
   const categoriesList = ["All", ...CATEGORIES.map((c) => c.name)];
   const levelsList: Array<"All" | CourseLevel> = ["All", "Beginner", "Intermediate", "Advanced"];

@@ -7,21 +7,15 @@ import {
   ChevronRight,
   Clock,
   BarChart,
-  Calendar,
   CheckCircle2,
   Award,
-  Users,
   ShieldCheck,
-  BookOpen,
   MessageSquare,
-  ArrowRight,
   Sparkles,
 } from "lucide-react";
 import { COURSES } from "@/data/courses";
 import { getCourseBySlug } from "@/data/index";
-import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Badge } from "@/components/ui/Badge";
-import { Button } from "@/components/ui/Button";
 import { Accordion } from "@/components/ui/Accordion";
 import { StarRating } from "@/components/ui/StarRating";
 import { CourseReviewsSection } from "@/components/CourseReviewsSection";

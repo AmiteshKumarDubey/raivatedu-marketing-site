@@ -1,18 +1,12 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 import {
-  Sparkles,
   ArrowRight,
   GraduationCap,
   Users,
   Award,
   TrendingUp,
-  CheckCircle,
   ShieldCheck,
   Zap,
-  Code2,
-  Calendar,
   MessageSquare,
   Star,
 } from "lucide-react";

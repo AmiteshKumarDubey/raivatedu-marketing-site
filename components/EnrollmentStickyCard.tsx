@@ -7,10 +7,8 @@ import {
   ShieldCheck,
   CheckCircle2,
   Clock,
-  Sparkles,
   ArrowRight,
   X,
-  CreditCard,
   Lock,
 } from "lucide-react";
 import { Course } from "@/data/types";

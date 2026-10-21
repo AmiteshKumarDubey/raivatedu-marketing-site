@@ -1,9 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Star, Clock, Award, ArrowUpRight } from "lucide-react";
+import { Star, Clock, ArrowUpRight } from "lucide-react";
 import { Mentor } from "@/data/types";
-import { Badge } from "./ui/Badge";
 
 interface MentorCardProps {
   mentor: Mentor;
