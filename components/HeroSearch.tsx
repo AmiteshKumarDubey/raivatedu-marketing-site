@@ -27,22 +27,22 @@ export function HeroSearch() {
     <div className="w-full max-w-2xl mx-auto">
       <form
         onSubmit={handleSearch}
-        className="relative flex items-center rounded-2xl md:rounded-full bg-white dark:bg-slate-900 border-2 border-slate-200/90 dark:border-slate-800 shadow-xl shadow-indigo-500/5 p-2 focus-within:border-indigo-600 dark:focus-within:border-indigo-500 focus-within:ring-4 focus-within:ring-indigo-500/15 transition-all"
+        className="relative flex items-center rounded-2xl md:rounded-full bg-white dark:bg-slate-900 border-2 border-slate-200/90 dark:border-slate-800 shadow-xl shadow-indigo-500/5 focus-within:border-indigo-600 dark:focus-within:border-indigo-500 focus-within:ring-4 focus-within:ring-indigo-500/15 transition-all"
       >
-        <div className="pl-3.5 pr-2 text-slate-400">
+        <div className="absolute left-3.5 sm:left-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none">
           <Search className="w-5 h-5" />
         </div>
         <input
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search by skill, topic, or career track (e.g., Next.js, AI, UX, Cloud)..."
+          placeholder="Search by skill, topic, or track..."
           aria-label="Search courses"
-          className="w-full bg-transparent text-sm sm:text-base text-slate-900 dark:text-slate-100 placeholder:text-slate-400 focus:outline-none py-2"
+          className="w-full bg-transparent text-sm sm:text-base text-slate-900 dark:text-slate-100 placeholder:text-slate-400 focus:outline-none pl-11 sm:pl-12 pr-36 sm:pr-40 py-3 sm:py-3.5"
         />
         <button
           type="submit"
-          className="px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl md:rounded-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-xs sm:text-sm cursor-pointer transition-all shrink-0 flex items-center gap-1.5 shadow-md shadow-indigo-600/20 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600"
+          className="absolute right-1.5 sm:right-2 top-1/2 -translate-y-1/2 px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl md:rounded-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-xs sm:text-sm cursor-pointer transition-all flex items-center gap-1.5 shadow-md shadow-indigo-600/20 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600"
         >
           <span>Find Courses</span>
           <ArrowRight className="w-4 h-4" />

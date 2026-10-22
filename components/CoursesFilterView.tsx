@@ -110,7 +110,7 @@ export function CoursesFilterView() {
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search by course title, tech stack (Next.js, Python, Figma), or keyword..."
+            placeholder="Search by title, tech stack, or keyword..."
             aria-label="Filter courses by keyword"
             className="w-full pl-12 pr-10 py-3 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
           />

@@ -182,7 +182,7 @@ export function EnrollmentStickyCard({ course }: EnrollmentStickyCardProps) {
               ${course.originalPrice}
             </span>
           </div>
-          <p className="text-[10px] text-amber-600 dark:text-amber-400 font-semibold">
+          <p className="text-[10px] text-amber-600 dark:text-amber-400 font-semibold truncate max-w-[170px] sm:max-w-none">
             {course.seatsLeft} seats left for {course.nextCohortDate}
           </p>
         </div>
