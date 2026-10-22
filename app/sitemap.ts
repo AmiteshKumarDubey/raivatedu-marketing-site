@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { COURSES } from "@/data/courses";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://raivatedu.vercel.app";
+  const baseUrl = "https://raivatedu-marketing-site.vercel.app";
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {

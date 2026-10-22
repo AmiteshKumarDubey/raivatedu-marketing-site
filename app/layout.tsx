@@ -13,7 +13,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://raivatedu.vercel.app"),
+  metadataBase: new URL("https://raivatedu-marketing-site.vercel.app"),
   title: {
     default: "Raivatedu | Elite Cohort-Based Tech & Design Education",
     template: "%s | Raivatedu",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://raivatedu.vercel.app",
+    url: "https://raivatedu-marketing-site.vercel.app",
     siteName: "Raivatedu",
     title: "Raivatedu | Elite Cohort-Based Tech & Design Education",
     description:
