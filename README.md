@@ -8,7 +8,7 @@ Developed for the **Meru Technosoft Frontend Internship Selection Assignment**.
 
 ## 🌟 Live Demo & Preview
 
-* **Production URL:** [https://raivatedu.vercel.app](https://raivatedu.vercel.app) *(Deploy ready for Vercel/Netlify)*
+* **Production URL:** [https://raivatedu.vercel.app]([https://raivatedu.vercel.app](https://raivatedu-marketing-site.vercel.app/)) *(Deploy ready for Vercel/Netlify)*
 * **Repository:** [https://github.com/AmiteshKumarDubey/raivatedu-marketing-site](https://github.com/AmiteshKumarDubey/raivatedu-marketing-site)
 
 ---
